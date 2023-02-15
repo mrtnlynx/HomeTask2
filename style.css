@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Neuton:wght@200&display=swap');
+
+body {
+    background-color: rgba(247, 229, 150, 0.788);
+}
+
+.top {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-size: cover; 
+    box-shadow: 0px 15px 20px -5px rgba(85, 34, 34, 0.8);
+    background-image: linear-gradient(to right, rgba(247, 229, 150, 0), rgba(255, 186, 57, 0.788), rgba(247, 229, 150, 0));
+    animation: topcover;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes topcover {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
+
+.title-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(255, 190, 93, 0.788), #ffffff00);
+}
+
+.uzor {
+    display: grid;
+    width: 50%;
+    height: 150px;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    opacity: 0;
+    z-index: -1;
+    position: relative;
+    font-family: 'Great Vibes';
+    text-align: center;
+    color: rgb(161, 65, 65);
+    font-size: 25px;
+    animation: titleheader;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titleheader {
+    0% {top: -45px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}    
+}
+
+.golubcy {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 25%;
+    opacity: 0;
+    animation: titleimg;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titleimg {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
+
+.ingredients {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    margin: 0 auto;
+    position: relative;
+    animation: anidients;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anidients {
+    0% {left: -1000px; opacity: 0;}
+    85% {left: 50px; opacity: 0.3;}
+    100% {left: 0}
+}
+
+.ingredients-table {
+    margin: 0 auto;
+    width: 85%;
+    text-align: left;
+    font-family: 'Neuton';
+    font-size: 18px;
+    color: rgb(46, 15, 15);
+}
+
+.instructions {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    margin: 0 auto;
+    position: relative;
+    animation: anictions;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anictions {
+    0% {right: -1000px; opacity: 0;}
+    85% {right: 50px; opacity: 0.3;}
+    100% {right: 0}
+}
+
+.instructions-ol {
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Neuton';
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(46, 15, 15);
+}
+
+.footer {
+    padding-top: 10px;
+    font-family: 'Great Vibes';
+    font-size: 120%;
+    text-align: center;
+    color: rgb(161, 65, 65);
+    margin: 0 auto;
+    opacity: 0;
+    animation: anifooter;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anifooter {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
+
+.sub-heading {
+    font-family: 'Great Vibes';
+    text-align: center;
+    color: rgb(161, 65, 65);
+    font-size: 23px;
+}
+
+.line {
+    width: 75%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(252, 2, 2, 0), rgba(161, 65, 65), rgba(0, 0, 0, 0));
+}
+
+.small-heading {
+    font-family: 'Neutron';
+    color: rgb(61, 5, 5);
+    font-size: 20px;
+}
+
+th, tr {
+    border-bottom: 1px solid #80272749;
+}
+
+.bottom-image{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(255, 190, 93, 0.788), #ffffff00);
+}
+
+.krasota{
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 15%;   
+    animation: footerimg;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footerimg {
+    0% {opacity: 0;}
+    100% {opacity: 0.8}
+}
+
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(161, 65, 65);
+    border: 1px solid rgba(97, 26, 26, 0.534);
+    margin: 2px;
+    padding: 6px;
+}
